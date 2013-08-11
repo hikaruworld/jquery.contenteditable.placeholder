@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-git2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../jquery.contenteditable.placeholder.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function() {
+        // $.setPlaceholder({inativeEvent: 'focus'});
+        $.setPlaceholder("#test");
+        // $.setPlaceholder("#test", {inativeEvent: 'focus'});
+      });
+    </script>
+    <style type="text/css" media="screen">
+      [data-placeholder][data-placeholderactive=true]::before {
+        content: attr(data-placeholder);
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test" contenteditable="true" data-placeholder="init...">
+    </div>
+  </body>
+</html>

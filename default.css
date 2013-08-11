@@ -1,0 +1,6 @@
+@charset="utf-8"
+
+[data-placeholder][data-placeholder-active=true]::before {
+  content: attr(data-placeholder);
+  opacity: 0.5
+} 
